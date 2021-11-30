@@ -3,7 +3,7 @@
 //
 
 #include "EntityManager.hpp"
-#include <assert.h>
+#include <cassert>
 
 EntityManager::EntityManager()
 {

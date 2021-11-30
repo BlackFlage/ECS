@@ -1,14 +1,19 @@
 #include <iostream>
 #include "EntityManager.hpp"
+#include "ComponentArray.hpp"
 
 int main()
 {
     EntityManager manager;
 
-    for(int i = 0; i < 10; i++)
+    std::array<Entity, 5> my_entities{};
+
+    for(int i = 0; i < 5; i++)
     {
-        Entity e = manager.create_entity();
+        my_entities[i] = manager.create_entity();
     }
+
+
 
     return 0;
 }
