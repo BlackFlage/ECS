@@ -1,3 +1,0 @@
-C:/Users/BlackFlage/OneDrive - Politechnika Wroclawska/C++/ECS/cmake-build-debug/CMakeFiles/ECS.dir
-C:/Users/BlackFlage/OneDrive - Politechnika Wroclawska/C++/ECS/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/BlackFlage/OneDrive - Politechnika Wroclawska/C++/ECS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
