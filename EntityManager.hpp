@@ -5,16 +5,10 @@
 #ifndef ECS_ENTITYMANAGER_HPP
 #define ECS_ENTITYMANAGER_HPP
 
-#include <cstdint>
 #include <queue>
 #include <bitset>
 #include <array>
-
-using Entity = std::uint16_t;
-
-static constexpr Entity MAX_ENTITIES = 1024;
-
-using Signature = std::bitset<MAX_ENTITIES>;
+#include "Types.hpp"
 
 class EntityManager
 {
