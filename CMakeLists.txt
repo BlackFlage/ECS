@@ -12,6 +12,8 @@ set(HEADER_FILES
         EntityManager.hpp
         ComponentArray.hpp
         ComponentManager.hpp
-        Types.hpp)
+        Types.hpp
+        System.hpp
+        SystemManager.hpp MainManager.hpp)
 
 add_executable(${PROJECT_NAME} ${HEADER_FILES} ${SOURCE_FILES})

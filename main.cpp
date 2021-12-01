@@ -1,6 +1,7 @@
 #include <iostream>
 #include "EntityManager.hpp"
 #include "ComponentManager.hpp"
+#include "SystemManager.hpp"
 #include <random>
 
 struct Position
@@ -20,11 +21,13 @@ int main()
 {
     EntityManager entity_manager;
     ComponentManager component_manager;
+    SystemManager system_manager;
 
     component_manager.register_component<Position>();
 
     std::array<Entity, 5> my_entities{};
-    std::default_random_engine generator;
+    std::random_device rd;
+    std::default_random_engine generator(rd());
     std::uniform_real_distribution<float> randPosition(-100.0f, 100.0f);
 
     for(int i = 0; i < 5; i++)
