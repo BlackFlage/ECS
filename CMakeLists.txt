@@ -6,12 +6,12 @@ set(CMAKE_CXX_STANDARD 20)
 set(SOURCE_FILES
         main.cpp
         EntityManager.cpp
-        ComponentArray.cpp
         )
 
 set(HEADER_FILES
         EntityManager.hpp
         ComponentArray.hpp
-        )
+        ComponentManager.hpp
+        Types.hpp)
 
 add_executable(${PROJECT_NAME} ${HEADER_FILES} ${SOURCE_FILES})
