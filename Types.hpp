@@ -6,6 +6,7 @@
 #define ECS_TYPES_HPP
 
 #include <cstdint>
+#include <bitset>
 
 using Entity = std::uint32_t;
 using ComponentType = std::uint8_t;
