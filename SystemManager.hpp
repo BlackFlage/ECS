@@ -20,7 +20,7 @@ public:
     {
         const char* system_name = typeid(T).name();
 
-        assert(m_systems.find(system_name) == m_system.end());
+        assert(m_systems.find(system_name) == m_systems.end());
 
         auto system = std::make_shared<T>();
         m_systems.insert({system_name, system});
@@ -33,7 +33,7 @@ public:
     {
         const char* system_name = typeid(T).name();
 
-        assert(m_systems.find(system_name) != m_system.end());
+        assert(m_systems.find(system_name) != m_systems.end());
 
         m_signatures.insert({system_name, a_signature});
     }

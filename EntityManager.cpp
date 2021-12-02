@@ -44,7 +44,7 @@ Signature EntityManager::get_signature(const Entity &a_entity)
 
 void EntityManager::set_signature(const Entity& a_entity, const Signature& a_signature)
 {
-    assert(a_entity > 0 && a_entity < MAX_ENTITIES);
+    assert(a_entity >= 0 && a_entity < MAX_ENTITIES);
 
     m_signatures[a_entity] = a_signature;
 }
